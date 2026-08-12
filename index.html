@@ -83,22 +83,6 @@
     .card h3 { margin: 0 0 8px; font-size: 18px; letter-spacing: -0.01em; }
     .card p { margin: 0; color: var(--ink-soft); font-size: 15.5px; }
 
-    /* Status */
-    .status { padding: 48px 0; border-top: 1px solid var(--line); }
-    .status-box {
-      border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
-    }
-    .status-row {
-      display: flex; align-items: flex-start; gap: 14px; padding: 18px 22px;
-    }
-    .status-row + .status-row { border-top: 1px solid var(--line); }
-    .dot { flex: 0 0 auto; width: 10px; height: 10px; border-radius: 999px; margin-top: 7px; }
-    .dot.live { background: #16a34a; box-shadow: 0 0 0 4px rgba(22,163,74,0.12); }
-    .dot.wip { background: #d97706; box-shadow: 0 0 0 4px rgba(217,119,6,0.12); }
-    .status-row b { font-weight: 650; }
-    .status-row p { margin: 3px 0 0; color: var(--ink-soft); font-size: 15px; }
-    .status-note { font-size: 15px; color: var(--ink-soft); margin: 18px 0 0; }
-
     /* Final CTA */
     .final { padding: 56px 0; border-top: 1px solid var(--line); text-align: center; }
     .final h2 { font-size: clamp(26px, 4vw, 34px); letter-spacing: -0.02em; margin: 0 0 14px; }
@@ -124,7 +108,6 @@
         <a class="brand" href="/">IDP<span>.to</span></a>
         <nav class="nav">
           <a href="#features">Product</a>
-          <a href="#status">Status</a>
           <a href="https://help.idp.to">Developer docs</a>
           <a href="https://admin.idp.to/login">Sign in</a>
         </nav>
@@ -178,32 +161,6 @@
             <p>Authorization-code flow with PKCE, RS256-signed tokens, and JWKS key rotation — the way modern apps expect.</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="status" id="status">
-      <div class="wrap">
-        <p class="section-label">Where things stand</p>
-        <div class="status-box">
-          <div class="status-row">
-            <span class="dot live"></span>
-            <div>
-              <b>Live today — the full sign-in flow</b>
-              <p>Discovery, JWKS, hosted login pages, and the authorization-code + PKCE exchange are live in production. Real applications sign their users in through IDP.to right now, end to end.</p>
-            </div>
-          </div>
-          <div class="status-row">
-            <span class="dot wip"></span>
-            <div>
-              <b>In active development — console polish and enterprise SSO</b>
-              <p>The admin console, enterprise SSO, and onboarding are under active development. Early-access accounts are open — expect rough edges and fast iteration.</p>
-            </div>
-          </div>
-        </div>
-        <p class="status-note">
-          The developer documentation tracks exactly what is and isn't available.
-          <a href="https://help.idp.to">Read the current status →</a>
-        </p>
       </div>
     </section>
 
